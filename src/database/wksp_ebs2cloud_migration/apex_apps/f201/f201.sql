@@ -37,7 +37,7 @@ prompt APPLICATION 201 - CICD_DEMO
 --   Flashback:       0
 --   Export Type:     Application Export
 --     Pages:                      4
---       Items:                    5
+--       Items:                    4
 --       Processes:                5
 --       Regions:                  4
 --       Buttons:                  1
@@ -105,7 +105,7 @@ wwv_imp_workspace.create_flow(
 ,p_substitution_value_01=>'CICD_DEMO'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>6
-,p_version_scn=>12213483624380
+,p_version_scn=>12213483863962
 ,p_print_server_type=>'INSTANCE'
 ,p_file_storage=>'DB'
 ,p_is_pwa=>'Y'
@@ -1076,21 +1076,6 @@ wwv_flow_imp_page.create_page_item(
   'subtype', 'TEXT',
   'trim_spaces', 'BOTH')).to_clob
 );
-wwv_flow_imp_page.create_page_item(
- p_id=>wwv_flow_imp.id(25074018679377802)
-,p_name=>'P1_HOME'
-,p_item_sequence=>20
-,p_prompt=>'Home'
-,p_display_as=>'NATIVE_TEXT_FIELD'
-,p_cSize=>30
-,p_field_template=>1609121967514267634
-,p_item_template_options=>'#DEFAULT#'
-,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
-  'disabled', 'N',
-  'submit_when_enter_pressed', 'N',
-  'subtype', 'TEXT',
-  'trim_spaces', 'BOTH')).to_clob
-);
 end;
 /
 prompt --application/pages/page_00002
@@ -1564,4 +1549,4 @@ prompt  ...done
 
 
 
--- sqlcl_snapshot {"hash":"ef3cb70aa0522c6cf8abf28145d08754e77007b7","type":"APEX_APPLICATIONS","name":"f201","schemaName":"WKSP_EBS2CLOUD_MIGRATION","sxml":""}
+-- sqlcl_snapshot {"hash":"bf1de9acc43dbb91636b6ff637f37e65eebef6d4","type":"APEX_APPLICATIONS","name":"f201","schemaName":"WKSP_EBS2CLOUD_MIGRATION","sxml":""}
