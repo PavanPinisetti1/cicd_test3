@@ -1,0 +1,4 @@
+ .../apex_apps/f201/f201.sql                        | 21 ++------
+ .../apex_apps/f201/readable/application/f201.yaml  |  2 +-
+ .../f201/readable/application/pages/p00001.yaml    | 56 ----------------------
+ 3 files changed, 4 insertions(+), 75 deletions(-)
