@@ -33,11 +33,13 @@ This project requires the following:
    project init -name apex_cicd -schemas MYSCHEMA
 
 2. Export your APEX application:
-project export -o apex.201
+   ```bash
+   project export -o apex.201
 
-3. Initialize Git and make the first commit:
-git init
-git remote add origin <your-repo-url>
-git add .
-git commit -m "Initial commit - Project init + APEX app export"
-git push origin main
+4. Initialize Git and make the first commit:
+   ```bash
+   git init
+   git remote add origin <your-repo-url>
+   git add .
+   git commit -m "Initial commit - Project init + APEX app export"
+   git push origin main
