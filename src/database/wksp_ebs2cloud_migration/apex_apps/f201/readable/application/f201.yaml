@@ -115,7 +115,11 @@ attributes:
   auto-dismiss-success-messages: false
 
 subscription: 
+<<<<<<< HEAD
   version-number: 12213483863962
+=======
+  version-number: 12213502629897
+>>>>>>> bac6cbe2844408334455a2fc6ace26f4ee96e48a
 
 substitutions: 
 - # ====== Substitution: APP_NAME ==============================

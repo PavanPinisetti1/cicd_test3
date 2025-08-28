@@ -5,7 +5,7 @@
     name: Navigation Menu
 
   subscription: 
-    version-number: 12213465886258
+    version-number: 12213502588116
 
   source: 
     type: Static Values
@@ -56,6 +56,33 @@
       target: 
         url: 'f?p=&APP_ID.:2:&APP_SESSION.::&DEBUG.:::'
         page: 2 # Tracking Changes
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: new_page =====================================
+    id: 26587300003187814
+    label: 
+      label: new_page
+
+    icon: 
+      image/icon-css-classes: fa-file-o
+
+    layout: 
+      sequence: 30
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 3
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:3:&APP_SESSION.::&DEBUG.:::'
+        page: 3 # new_page
 
     click-counting: 
       count-clicks: false
